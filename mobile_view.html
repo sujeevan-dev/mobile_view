@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" >
+	<title>Mobile View</title>
+</head>
+
+<style type="text/css">
+	#mobile {
+		width: 320px;
+		height: 500px;
+		border: 10px solid #e6e7e9;
+		border-top-width: 50px;
+		border-bottom-width: 50px;
+		position: relative;
+		margin: auto;
+		border-radius: 20px;
+	}
+
+	#mobile::before {
+		content: '';
+		display: block;
+		width: 60px;
+		height: 5px;
+		position: absolute;
+		top: -30px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: #ded1cf;
+		border: #333;
+		border-radius: 10px;
+	}
+
+	#mobile::after {
+		content: "";
+		display: block;
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		position: absolute;
+		left: 50%;
+		bottom: -60px;
+		transform: translate(-50%, -50%);
+		background: #ded1cf;
+	}
+
+	.content {
+		width: 320px;
+		height: 500px;
+		background: #fff;
+	}
+</style>
+<body>
+<div id="mobile">
+	<div class="content">
+	<iframe src="https://frontendmasters.com/" style="width: 100%; height: 100%; border: none;"></iframe>
+	</div>
+</div>
+</body>
+</html>
